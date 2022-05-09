@@ -1,7 +1,8 @@
+
 #header {
     position: absolute;
     width: 300px;
-    background-color: #5C9EAD !important; ;
+    background-color: #5C9EAD !important;
 
 }
 #header .pro-sidebar {
@@ -24,6 +25,7 @@
 }
 #header .pro-sidebar-inner .pro-sidebar-layout {
     overflow-y: hidden;
+    background-color: #5C9EAD !important;
 }
 #header .pro-sidebar-inner .pro-sidebar-layout .logotext p {
     font-size: 20px;
