@@ -69,7 +69,7 @@ export const Rating = ({star}) => {
                 )
         }
     }
-    
+
     return (
         <div>
             {rateUser(star)}
