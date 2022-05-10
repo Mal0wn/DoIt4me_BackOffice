@@ -1,11 +1,6 @@
 import React from "react";
-import {Menu, MenuItem} from "react-pro-sidebar";
-import elon from "../../assets/elon.jpeg";
-import { MdWarning  } from "react-icons/md";
-import {FaList, FaStar , FaS} from "react-icons/fa"
+import { FaStar} from "react-icons/fa"
 import './Rating.css';
-import { users} from "../../db.js";
-
 
 export const Rating = ({star}) => {
 
@@ -74,9 +69,7 @@ export const Rating = ({star}) => {
                 )
         }
     }
-
-
-
+    
     return (
         <div>
             {rateUser(star)}
