@@ -1,0 +1,15 @@
+#navBar {
+    position: fixed;
+    width: 70%;
+    right: 0;
+    top: 0;
+    background-color: #7D1D3F;
+    color: #efeaea;
+}
+
+.navContain{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
