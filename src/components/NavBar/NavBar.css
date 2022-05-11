@@ -1,6 +1,6 @@
 #navBar {
     position: fixed;
-    width: 70%;
+    width: 100%;
     right: 0;
     top: 0;
     background-color: #7D1D3F;
@@ -10,6 +10,12 @@
 .navContain{
     display: flex;
     width: 90%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+    padding: 0.5em;
+}
+.navContain h2 {
+    font-size: 2em;
+    margin-left: 2em;
 }

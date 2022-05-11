@@ -5,10 +5,6 @@ ul {
     list-style-type:none;
 }
 
-.pro-icon-wrapper  {
-    font-size: 3em;
-    color: #7D1D3F;
-}
 .pro-item-content {
     display: flex;
 }
