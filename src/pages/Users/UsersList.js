@@ -8,9 +8,9 @@ import NavBar from "../../components/NavBar/NavBar";
 
 const ItemListUser = () => {
     return (
-        <div>
+        <div className="usersContainer page">
             <NavBar/>
-            <ul className="usersContainer page">
+            <ul >
                 {users.map((user) =>
                     <li key={user.id}>
                         <Menu  iconShape="square" className="userListContain">

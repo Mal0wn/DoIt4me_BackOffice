@@ -1,3 +1,4 @@
+
 div {
     display: flex;
 }
@@ -16,10 +17,7 @@ ul {
     margin-right: 1em;
     margin-left: 1em;
 }
-.usersContainer  {
-    display: flex;
-    flex-direction: column;
-}
+
 .infoUser {
     display: flex;
     flex-direction: column;
