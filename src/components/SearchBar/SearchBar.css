@@ -1,0 +1,20 @@
+.containSearchBar {
+    background-color: #5C9EAD;
+    width: 100%;
+    min-width: 300px;
+    min-height: 3em;
+    border-radius: 6px;
+}
+.containSearchBar input {
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+}
+.containSearchBar svg {
+    font-size: 2em;
+    margin-right: 0.5em;
+}
+.containSearchBar {
+    display: flex;
+    align-items: center;
+}
