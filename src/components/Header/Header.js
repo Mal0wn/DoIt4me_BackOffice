@@ -37,9 +37,11 @@ const Header = () => {
                             <li className="navLeftItem" ><BiCog /> Settings</li>
                         </Link>
                     </ul>
-                    <button ><FiLogOut /> Deconnexion</button>
+                    <button className="deco" ><FiLogOut /> Deconnexion</button>
                 </nav>
             </div>
+
+
     );
 };
 

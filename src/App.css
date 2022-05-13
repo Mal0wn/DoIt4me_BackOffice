@@ -4,8 +4,7 @@
     justify-content: end;
     width: 100%;
     background-color: transparent;
-}
-.page {
-    width: 75%;
-    margin-top: 150px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
 }

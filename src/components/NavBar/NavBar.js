@@ -5,10 +5,15 @@ import {useLocation} from "react-router-dom";
 
 const NavBar = () => {
 
+
     const [title, setTitle] = useState('')
     const urlName = useLocation().pathname
 
     useEffect(()=> {
+        /**
+         * Methode pour passer le title de la page sur la NavBar
+         * @param urlName
+         */
         switch (urlName) {
             case '/users':
                 return setTitle('Liste Utilisateurs')

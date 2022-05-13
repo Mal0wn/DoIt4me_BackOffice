@@ -10,6 +10,7 @@ import {UsersSignal} from "./pages/Signal/UsersSignal";
 import {MissionsSignal} from "./pages/Signal/MissionsSignal";
 import {Settings} from "./pages/Settings/Settings";
 import NavBar from "./components/NavBar/NavBar";
+import {UserDetails} from "./components/UserDetail/UserDetails";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route  exact path='/usersSignal' element={< UsersSignal />}/>
           <Route  exact path='/missionsSignal' element={< MissionsSignal />}/>
           <Route  exact path='/settings' element={< Settings />}/>
+          <Route  exact path='/userDetail' element={< UserDetails />}/>
       </Routes>
       </div>
   );

@@ -1,14 +1,14 @@
-.containHeader{
-    width: 20%;
-    background-color: #5C9EAD;
 
-}
 #header {
     position: fixed;
-    width: 20%;
-    background-color: #5C9EAD !important;
-    left : 0;
     height: 100%;
+    width: 25%;
+    background-color: #5C9EAD !important;
+    top : 0;
+    bottom: 0;
+    left : 0;
+    min-height: 25em;
+    index: 1000;
 }
 nav {
     padding: 1em;
@@ -17,9 +17,6 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
-
-
 }
 .logoText{
     padding-top: 4em;
@@ -27,7 +24,7 @@ nav {
     flex-direction: column;
     align-items: center;
 }
-.logoText img {
+.imgUser {
     width: 150px;
     height: 150px;
     border-radius: 60%;
@@ -57,9 +54,12 @@ a {
 .navLeftItem {
     background-color: #7D1D3F;
     border-radius: 6px;
-    padding : 1em;
+    padding :0.5em;
+    font-size: 0.7em;
+
+
 }
-button {
+.deco {
     background-color: #7D1D3F;
     color: #efeaea;
     border-radius: 6px;

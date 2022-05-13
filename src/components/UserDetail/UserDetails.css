@@ -1,0 +1,25 @@
+.userDetailContain {
+    display: flex;
+    flex-direction: column;
+
+}
+.userInfosDetail {
+    display: flex;
+    flex-direction: column;
+}
+.identityUser {
+
+}
+.identityUser img {
+    border-radius: 60%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.otherInfosUser {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}

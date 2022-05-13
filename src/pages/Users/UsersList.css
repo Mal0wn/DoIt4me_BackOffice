@@ -6,9 +6,8 @@ ul {
     list-style-type:none;
 }
 
-.pro-item-content {
-    display: flex;
-}
+
+
 .imgUserList {
     width: 50px;
     height: 50px;
@@ -20,5 +19,20 @@ ul {
 
 .infoUser {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.pro-icon svg{
+    color: #7D1D3F;
+    font-size: 3em;
+}
+.column {
+    display: flex;
     flex-direction: column;
+}
+
+.headTab {
+    color: #7D1D3F;
+    text-align: inherit;
 }
