@@ -1,5 +1,5 @@
 
-div {
+usersContainer {
     display: flex;
 }
 ul {
@@ -30,9 +30,38 @@ ul {
 .column {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .headTab {
     color: #7D1D3F;
     text-align: inherit;
+}
+.btnDetail {
+    background-color: #7D1D3F;
+    color: #efeaea;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    border-radius: 6px;
+    width: 80%;
+
+}
+.itemSignalUser {
+    width: 3em;
+    color : transparent;
+
+}
+.userSignalTrue {
+
+    color: #d37636;
+}
+.userSignalFalse {
+   color: transparent;
+}
+
+.itemSignalUser svg {
+    width: 3em;
+    height: 60%;
+
 }

@@ -8,3 +8,7 @@
     top: 0;
     bottom: 0;
 }
+
+div {
+    display: flex;
+}

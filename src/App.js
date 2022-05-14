@@ -10,7 +10,7 @@ import {UsersSignal} from "./pages/Signal/UsersSignal";
 import {MissionsSignal} from "./pages/Signal/MissionsSignal";
 import {Settings} from "./pages/Settings/Settings";
 import NavBar from "./components/NavBar/NavBar";
-import {UserDetails} from "./components/UserDetail/UserDetails";
+import {UserDetails} from "./pages/UserDetail/UserDetails";
 
 function App() {
 

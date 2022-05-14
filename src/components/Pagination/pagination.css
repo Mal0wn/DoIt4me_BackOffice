@@ -2,6 +2,13 @@
     display: flex;
     list-style-type: none;
     flex-direction: row;
+    height: 4em;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    align-items: center;
+    min-height: 10%;
+    justify-content: space-evenly;
 }
 
 .pagination-item {

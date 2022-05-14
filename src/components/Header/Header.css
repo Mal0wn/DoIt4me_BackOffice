@@ -35,7 +35,7 @@ nav {
     color: #efeaea;
     font-weight: bold;
 }
-ul {
+.listLink {
     min-height: 40%;
     display: flex;
     flex-direction: column;

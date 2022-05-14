@@ -25,6 +25,8 @@ const NavBar = () => {
                 return setTitle("Missions Signalées")
             case '/settings' :
                 return setTitle("Paramètres")
+            case '/userDetails' :
+                return setTitle("Nom : ")
             default:
                 return 'Espace Admin'
         }

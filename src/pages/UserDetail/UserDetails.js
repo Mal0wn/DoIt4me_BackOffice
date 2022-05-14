@@ -1,16 +1,19 @@
 import React from "react";
 import "./UserDetails.css";
-import {Signal} from "../Signal/Signal";
+import {Signal} from "../../components/Signal/Signal";
 import { users} from "../../db.js";
-import {Rating} from "../Rating/Rating";
+import {Rating} from "../../components/Rating/Rating";
+import NavBar from "../../components/NavBar/NavBar";
+import {Link} from "react-router-dom";
 
 export const UserDetails = () => {
 
     let user = users[0];
-    console.log(user);
+
 
     return (
-        <div className="userDetailContain page">
+        <div className="userDetailContain ">
+            <Link to="/users">Retour</Link>
             <div className="userInfosDetail">
                 <div className='identityUser'>
                     <img src={user.profilPicture} alt="profilPictureUser" />

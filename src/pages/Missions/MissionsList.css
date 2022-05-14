@@ -1,0 +1,65 @@
+.containMissionList{
+    margin-top: 4em;
+}
+.containMission{
+    display: flex;
+    flex-direction: column;
+}
+.listMissions {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: row;
+}
+.itemMission {
+    display: flex;
+    flex-direction: column ;
+    margin: 2em;
+    width: 20%;
+    font-size: 0.6em;
+    border-radius: 6px;
+    padding: 1em;
+    color: #efeaea;
+    font-weight: bold;
+    justify-content: space-between;
+}
+.containImgMissList {
+    max-height: 100px;
+    height: 100%;
+    padding: 1em;
+}
+.imgMissList {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.containTitleDesc, .missInfUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.itemTit {
+    font-size: 1.6em;
+}
+.containBtnSupp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.itemBtnSupp {
+    width: 70%;
+    background-color: #7D1D3F;
+    color: #efeaea;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    padding: 0.4em;
+}
+
+.signalFalse {
+    background-color: #5C9EAD;
+}
+
+.signalTrue {
+    background-color: #d37636;
+}
