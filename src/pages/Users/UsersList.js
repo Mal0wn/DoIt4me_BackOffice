@@ -1,5 +1,4 @@
 import React , {useState, useMemo} from  "react";
-import {Menu, MenuItem} from "react-pro-sidebar";
 import { FaSkull  } from "react-icons/fa";
 import './UsersList.css';
 import { users} from "../../db.js";
