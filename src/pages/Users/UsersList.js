@@ -1,20 +1,12 @@
 import React , {useState, useMemo} from  "react";
-import {Menu, MenuItem} from "react-pro-sidebar";
-import { MdWarning  } from "react-icons/md";
 import './UsersList.css';
 import { users} from "../../db.js";
 import {Rating} from "../../components/Rating/Rating";
 import NavBar from "../../components/NavBar/NavBar";
-
-import {
-    Link
-} from 'react-router-dom';
 import Pagination from '../../components/Pagination/Pagination'
-
-
+import UIInput from "../../components/UI/UIInputLogin/UIInputLogin";
 
 const ItemListUser = () => {
-
      let PageSize = 7;
      const [currentPage, setCurrentPage] = useState(1)
 
@@ -23,7 +15,6 @@ const ItemListUser = () => {
             const lastPageIndex = firstPageIndex + PageSize;
             return users.slice(firstPageIndex , lastPageIndex);
         }, [currentPage])
-
 
     function handlePageChange(pageNumber) {
         this.setState({activePage : pageNumber})
