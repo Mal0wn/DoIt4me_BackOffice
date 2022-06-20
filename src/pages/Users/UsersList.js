@@ -1,17 +1,9 @@
 import React , {useState, useMemo} from  "react";
-import {Menu, MenuItem} from "react-pro-sidebar";
-import { MdWarning  } from "react-icons/md";
 import './UsersList.css';
 import { users} from "../../db.js";
 import {Rating} from "../../components/Rating/Rating";
 import NavBar from "../../components/NavBar/NavBar";
-
-import {
-    Link
-} from 'react-router-dom';
 import Pagination from '../../components/Pagination/Pagination'
-
-
 
 const ItemListUser = () => {
 
