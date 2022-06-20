@@ -9,13 +9,10 @@ import {MissionsList} from "./pages/Missions/MissionsList";
 import {UsersSignal} from "./pages/Signal/UsersSignal";
 import {MissionsSignal} from "./pages/Signal/MissionsSignal";
 import {Settings} from "./pages/Settings/Settings";
-import NavBar from "./components/NavBar/NavBar";
+import { Connexion } from './pages/Connexion/Connexion'
 import {UserDetails} from "./components/UserDetail/UserDetails";
 
 function App() {
-
-
-
   return (
       <div className="appContain">
           <Header/>
@@ -26,6 +23,7 @@ function App() {
           <Route  exact path='/missionsSignal' element={< MissionsSignal />}/>
           <Route  exact path='/settings' element={< Settings />}/>
           <Route  exact path='/userDetail' element={< UserDetails />}/>
+          <Route  exact path='/login' element={< Connexion />}/>
       </Routes>
       </div>
   );
