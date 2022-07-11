@@ -5,6 +5,7 @@ import {
     Route,
 } from 'react-router-dom';
 import UsersList from "./pages/Users/UsersList";
+import { Connexion } from './pages/Connexion/Connexion';
 import {MissionsList} from "./pages/Missions/MissionsList";
 import {UsersSignal} from "./pages/Signal/UsersSignal";
 import {MissionsSignal} from "./pages/Signal/MissionsSignal";
@@ -13,9 +14,6 @@ import NavBar from "./components/NavBar/NavBar";
 import {UserDetails} from "./components/UserDetail/UserDetails";
 
 function App() {
-
-
-
   return (
       <div className="appContain">
           <Header/>
@@ -26,6 +24,7 @@ function App() {
           <Route  exact path='/missionsSignal' element={< MissionsSignal />}/>
           <Route  exact path='/settings' element={< Settings />}/>
           <Route  exact path='/userDetail' element={< UserDetails />}/>
+          <Route  exact path='/login' element={< Connexion />}/>
       </Routes>
       </div>
   );
