@@ -16,7 +16,7 @@ import {UserDetails} from "./components/UserDetail/UserDetails";
 function App() {
   return (
       <div className="appContain">
-          <Header/>
+      <Header/>
       <Routes>
           <Route  exact path='/users' element={<UsersList  />}/>
           <Route  exact path='/missions' element={< MissionsList />}/>
@@ -25,6 +25,7 @@ function App() {
           <Route  exact path='/settings' element={< Settings />}/>
           <Route  exact path='/userDetail' element={< UserDetails />}/>
           <Route  exact path='/login' element={< Connexion />}/>
+          <Route  exact path='/' element={< Connexion />}/>
       </Routes>
       </div>
   );
