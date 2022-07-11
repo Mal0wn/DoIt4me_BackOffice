@@ -4,8 +4,6 @@ import {SearchBar} from "../SearchBar/SearchBar";
 import {useLocation} from "react-router-dom";
 
 const NavBar = () => {
-
-
     const [title, setTitle] = useState('')
     const urlName = useLocation().pathname
 
