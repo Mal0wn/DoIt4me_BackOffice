@@ -9,7 +9,6 @@ import {MissionsList} from "./pages/Missions/MissionsList";
 import {UsersSignal} from "./pages/Signal/UsersSignal";
 import {MissionsSignal} from "./pages/Signal/MissionsSignal";
 import {Settings} from "./pages/Settings/Settings";
-import {UserDetails} from "./pages/UserDetail/UserDetails";
 import { Connexion } from './pages/Connexion/Connexion'
 import {UserDetails} from "./pages/UserDetail/UserDetails";
 
