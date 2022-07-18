@@ -11,8 +11,6 @@ import {MissionsSignal} from "./pages/Signal/MissionsSignal";
 import {Settings} from "./pages/Settings/Settings";
 import {UserDetails} from "./pages/UserDetail/UserDetails";
 import { Connexion } from './pages/Connexion/Connexion'
-import {UserDetails} from "./components/UserDetail/UserDetails";
-import NavBar from "./components/NavBar/NavBar";
 import {UserDetails} from "./pages/UserDetail/UserDetails";
 
 
