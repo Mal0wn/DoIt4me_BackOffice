@@ -5,18 +5,17 @@ import {
     Route,
 } from 'react-router-dom';
 import UsersList from "./pages/Users/UsersList";
+import { Connexion } from './pages/Connexion/Connexion';
 import {MissionsList} from "./pages/Missions/MissionsList";
 import {UsersSignal} from "./pages/Signal/UsersSignal";
 import {MissionsSignal} from "./pages/Signal/MissionsSignal";
 import {Settings} from "./pages/Settings/Settings";
-import { Connexion } from './pages/Connexion/Connexion'
 import {UserDetails} from "./pages/UserDetail/UserDetails";
-
 
 function App() {
   return (
       <div className="appContain">
-          <Header/>
+      <Header/>
       <Routes>
           <Route  exact path='/users' element={<UsersList  />}/>
           <Route  exact path='/missions' element={< MissionsList />}/>
@@ -25,6 +24,8 @@ function App() {
           <Route  exact path='/settings' element={< Settings />}/>
           <Route  exact path='/userDetail' element={< UserDetails />}/>
           <Route  exact path='/login' element={< Connexion />}/>
+          <Route  exact path='/' element={< Connexion />}/>
+
       </Routes>
       </div>
   );
