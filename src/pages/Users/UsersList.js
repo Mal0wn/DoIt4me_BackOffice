@@ -4,13 +4,8 @@ import './UsersList.css';
 import { users} from "../../db.js";
 import {Rating} from "../../components/Rating/Rating";
 import NavBar from "../../components/NavBar/NavBar";
-
-import {
-    Link
-} from 'react-router-dom';
 import Pagination from '../../components/Pagination/Pagination'
-
-
+import {Link} from "react-router-dom";
 
 const ItemListUser = () => {
 
@@ -24,9 +19,9 @@ const ItemListUser = () => {
         }, [currentPage])
 
 
-    function handlePageChange(pageNumber) {
-        this.setState({activePage : pageNumber})
-    }
+    //function handlePageChange(pageNumber) {
+    //    this.setState({activePage : pageNumber})
+    //}
 
     return (
         <div className="usersContainer page">
@@ -51,6 +46,7 @@ const ItemListUser = () => {
                             <tr  key={item.id}>
                                 <td className={`itemSignalUser ${item.status === "signal"? 'userSignalTrue' : 'userSignalFalse'}`}><FaSkull/></td>
                                 <td> <img className="imgUserList" src={item.profilPicture}/></td>
+                                <td> <img alt="image user" className="imgUserList" src={item.profilPicture}/></td>
                                 <td>{item.firstName}</td>
                                 <td>{item.lastName}</td>
                                 <td>{item.mail}</td>
