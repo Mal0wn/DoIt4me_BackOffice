@@ -45,6 +45,7 @@ const ItemListUser = () => {
                         return (
                             <tr  key={item.id}>
                                 <td className={`itemSignalUser ${item.status === "signal"? 'userSignalTrue' : 'userSignalFalse'}`}><FaSkull/></td>
+                                <td> <img className="imgUserList" src={item.profilPicture}/></td>
                                 <td> <img alt="image user" className="imgUserList" src={item.profilPicture}/></td>
                                 <td>{item.firstName}</td>
                                 <td>{item.lastName}</td>
