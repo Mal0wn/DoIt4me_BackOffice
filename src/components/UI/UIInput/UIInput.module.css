@@ -1,0 +1,15 @@
+.container {
+    width: 300px;
+    height: 30px;
+    padding-bottom: 20px;
+}
+
+.input {
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 300px;
+    height: 30px;
+    color: black;
+    background-color: #A2D2FF;
+}                                     

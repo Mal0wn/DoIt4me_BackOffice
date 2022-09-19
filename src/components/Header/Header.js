@@ -1,62 +1,68 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { FaArchive } from "react-icons/fa";
 import { FiLogOut, FiUser, FiStopCircle } from "react-icons/fi";
 import { RiAdvertisementLine } from "react-icons/ri";
 import { BiCog } from "react-icons/bi";
 import elon from "../../assets/elon.jpeg";
 import "./Header.css";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-const isAuthenticate = false
+export const Header = () => {
+  const navigate = useNavigate();
+  const [user, setUser] = useState()
 
-const onDeconnect = () => {
-  localStorage.removeItem("accessToken");
-};
+  const onDeconnect = () => {
+    localStorage.removeItem('accessToken')
+    navigate("/");
+  };
 
-const Header = () => {
-  if (isAuthenticate === true) {
-    return (
+  useEffect(() => {
+    let user = JSON.parse(localStorage.getItem('currentUser'))
+    setUser(user)
+  }, []);
+
+  return (
       <div id="header">
         <nav>
           <div className="logoText">
-            <img className="imgUser" src={elon} alt={"image user"} />
-            <p> User Name</p>
+            <img className="imgUser" src={elon} alt="userPic" />
+            <p>{user.lastname + ' ' + user.firstname}</p>
           </div>
           <ul>
             <Link to="/users">
               <li className="navLeftItem" active="true">
-                {" "}
-                <FiUser /> Utilisateurs
+                <FiUser /> <p>Utilisateurs</p>
               </li>
             </Link>
             <Link to="/missions">
               <li className="navLeftItem">
-                <FaArchive /> Annonces
+                <FaArchive /> <p>Annonces</p>
               </li>
             </Link>
             <Link to="/usersSignal">
               <li className="navLeftItem">
-                <RiAdvertisementLine /> Signalement utilisateurs
+                <RiAdvertisementLine /> <p>Signalement utilisateurs</p>
               </li>
             </Link>
             <Link to="/missionsSignal">
               <li className="navLeftItem">
-                <FiStopCircle /> Signalements annonces
+                <FiStopCircle /> <p>Signalements annonces</p>
               </li>
             </Link>
             <Link to="/settings">
               <li className="navLeftItem">
-                <BiCog /> Settings
+                <BiCog /> <p>Settings</p>
               </li>
             </Link>
           </ul>
-          <button onClick={onDeconnect()} className="deconnexion">
-            <FiLogOut /> Deconnexion
+          <button onClick={onDeconnect} className="deconnexion">
+            <FiLogOut /> 
+            <p>Deconnexion</p>
           </button>
         </nav>
       </div>
-    );
-  } 
+  )
 };
 
 export default Header;
