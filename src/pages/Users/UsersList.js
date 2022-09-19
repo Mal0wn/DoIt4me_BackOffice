@@ -6,6 +6,7 @@ import {Rating} from "../../components/Rating/Rating";
 import NavBar from "../../components/NavBar/NavBar";
 import Pagination from '../../components/Pagination/Pagination'
 import {Link} from "react-router-dom";
+import Header from "../../components/Header/Header";
 
 const ItemListUser = () => {
 
@@ -27,6 +28,7 @@ const ItemListUser = () => {
         <div className="usersContainer page">
             <NavBar/>
             <div className="column">
+            <Header/>
                 <table className="containList">
                     <thead>
                     <tr>

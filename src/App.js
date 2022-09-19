@@ -15,7 +15,6 @@ import {UserDetails} from "./pages/UserDetail/UserDetails";
 function App() {
   return (
       <div className="appContain">
-      <Header/>
       <Routes>
           <Route  exact path='/users' element={<UsersList  />}/>
           <Route  exact path='/missions' element={< MissionsList />}/>
