@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   const navigate = useNavigate();
-  const [user, setUser] = useState()
+  const [user, setUser] = useState({"firstname": "", "lastname": ""})
 
   const onDeconnect = () => {
     localStorage.removeItem('accessToken')
@@ -27,7 +27,7 @@ export const Header = () => {
         <nav>
           <div className="logoText">
             <img className="imgUser" src={elon} alt="userPic" />
-            <p>{user.lastname + ' ' + user.firstname}</p>
+            <p>{user.lastname} {user.firstname}</p>
           </div>
           <ul>
             <Link to="/users">

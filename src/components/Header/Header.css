@@ -25,8 +25,8 @@ nav {
     align-items: center;
 }
 .imgUser {
-    width: 150px;
-    height: 150px;
+    width: 20vh;
+    height: 20vh;
     border-radius: 60%;
     object-fit: cover;
 }
@@ -34,15 +34,13 @@ nav {
     font-size: 1.5em;
     color: #efeaea;
     font-weight: bold;
+    margin-bottom: -10%;
 }
 .listLink {
-    min-height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 a {
     color: #efeaea;
@@ -56,19 +54,30 @@ a {
     border-radius: 6px;
     padding :0.5em;
     font-size: 0.7em;
-
-
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
 }
-.deco {
+.navLeftItem p {
+    padding-left: 10px;
+}
+.deconnexion p {
+    padding-left: 10px;
+}
+.deconnexion {
     background-color: #7D1D3F;
     color: #efeaea;
     border-radius: 6px;
     border : none;
-    padding: 1em;
+    padding: 0.5em;
     font-size: 1.3em;
-    width: 100%;
+    width: 57%;
+    height: 7%;
+    margin-left: 11%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 

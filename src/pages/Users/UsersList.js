@@ -34,11 +34,11 @@ const ItemListUser = () => {
                     <tr>
                         <th></th>
                         <th className="headTab"></th>
-                        <th className="headTab">First Name</th>
-                        <th className="headTab">Last Name</th>
+                        <th className="headTab">Nom</th>
+                        <th className="headTab">Prénom</th>
                         <th className="headTab">Email</th>
-                        <th className="headTab">Phone</th>
-                        <th className="headTab">Rating</th>
+                        <th className="headTab">Téléphone</th>
+                        <th className="headTab">Avis</th>
                         <th className="headTab"></th>
                     </tr>
                     </thead>
