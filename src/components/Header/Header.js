@@ -27,7 +27,7 @@ export const Header = () => {
         <nav>
           <div className="logoText">
             <img className="imgUser" src={elon} alt="userPic" />
-            <p>{user.lastname + ' ' + user.firstname}</p>
+            <p>Administrateur</p>
           </div>
           <ul>
             <Link to="/users">
