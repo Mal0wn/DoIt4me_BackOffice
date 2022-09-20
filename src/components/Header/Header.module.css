@@ -1,14 +1,11 @@
 
-#header {
-    position: fixed;
+.header {
+    
     height: 100%;
     width: 25%;
-    background-color: #5C9EAD !important;
-    top : 0;
-    bottom: 0;
-    left : 0;
-    min-height: 25em;
-    index: 1000;
+  background:#5c9ead;
+border-bottom-right-radius: 6px;
+
 }
 nav {
     padding: 1em;
@@ -35,15 +32,26 @@ nav {
     color: #efeaea;
     font-weight: bold;
 }
+.listNav {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    }
+
 .listLink {
     min-height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
     margin: 0;
     padding: 0;
 }
+
 a {
     color: #efeaea;
     text-decoration: none;
@@ -52,23 +60,26 @@ a {
 
 }
 .navLeftItem {
-    background-color: #7D1D3F;
+       background-color: #7D1D3F;
     border-radius: 6px;
-    padding :0.5em;
-    font-size: 0.7em;
-
-
+    padding: 0.5em;
+    font-size: 0.5em;
+    display: flex;
+    align-items: center;
 }
-.deco {
-    background-color: #7D1D3F;
-    color: #efeaea;
-    border-radius: 6px;
-    border : none;
-    padding: 1em;
-    font-size: 1.3em;
+.navLeftItem p {
     width: 100%;
+    text-align: center;
+}
+.deconnexion {
+      color: #efeaea;
+    border: none;
+    padding: 0.2em;
+    font-size: 1em;
+    width: 75%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
 }
 
