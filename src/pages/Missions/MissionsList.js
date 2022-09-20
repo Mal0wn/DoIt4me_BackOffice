@@ -6,6 +6,7 @@ import './MissionsList.css';
 import {Rating} from "../../components/Rating/Rating";
 import Pagination from "../../components/Pagination/Pagination";
 import Header from '../../components/Header/Header';
+import dayjs from 'dayjs'
 
 export const MissionsList = () => {
 
@@ -49,17 +50,18 @@ let [missions, setAllMissions] = useState([])
                         return (
                             <li className={`itemMission ${item.status === "signal"? 'signalTrue' : 'signalFalse'}`} key={item.id}>
                                 <div className="containImgMissList">
-                                    <img className="imgMissList" src={item.picture}/>
+                                    <img className="imgMissList" src={item.picture ?? "https://bitsofco.de/content/images/2018/12/broken-1.png" }/>
                                 </div>
                                 <div className="containTitleDesc">
                                     <p className="itemTit">{item.title}</p>
                                     <p className="itemPri">{item.price}€ </p>
 
                                 </div>
-                                <p className="itemDesc">{item.desc}</p>
+                                <p className="itemDesc">{item.description}</p>
                                 <div className="missInfUs">
-                                    <p className="itemMissDat">Publié le: {item.missionDate}</p>
-                                    <p className="itemIdUs">Proposé par {item.idUser}</p>
+                                    <p className="itemMissDatPub">Publié le: {dayjs(item.creationDate).format('DD/MM/YYYY')}</p>
+                                   
+                                    <p className="itemIdUs">Proposé par {item.claimant.firstname}</p>
                                     <div className="containBtnSupp">
                                         <button className="itemBtnSupp">Supprimer</button>
                                     </div>
