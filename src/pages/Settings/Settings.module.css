@@ -1,0 +1,35 @@
+.container {
+  height: 90vh;
+  width: 73vw;
+  margin-top: 40px;
+}
+
+.formPartDiv {
+    display: block;
+    background-color: lightgrey;
+    border-radius: 15px;
+    width: 50vw;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.formPartDiv input {
+    margin-bottom: 10px;
+    border-color: transparent;
+    border-radius: 10px;
+    width: 30vw;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.saveButton {
+    height: 10vh;
+    width: 51.5vw;
+    border-radius: 15px;
+    background-color: #5C9EAD;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-color: transparent;
+}
