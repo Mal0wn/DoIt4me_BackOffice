@@ -1,7 +1,6 @@
 
 .appContain {
     flex-direction: row;
-    justify-content: end;
     width: 100%;
     background-color: transparent;
     position: absolute;

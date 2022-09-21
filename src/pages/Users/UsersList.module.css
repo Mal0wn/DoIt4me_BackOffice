@@ -1,5 +1,5 @@
 
-usersContainer {
+.usersContainer {
     display: flex;
 }
 ul {
@@ -51,13 +51,6 @@ ul {
     width: 3em;
     color : transparent;
 
-}
-.userSignalTrue {
-
-    color: #d37636;
-}
-.userSignalFalse {
-   color: transparent;
 }
 
 .itemSignalUser svg {

@@ -83,7 +83,7 @@ return (
                                     {item.maker != null ? (
                                         <p className={style.itemIdUs}>Accepté par : {item.maker.firstname}</p>) : (<p>Accepté par : Pas de Maker </p>)}
                                         <div className={style.containBtnSupp}>
-                                            <button className={style.itemBtnSupp} onClick={(event) =>  {
+                                            <button className={style.itemBtnSupp} onClick={() =>  {
                                                 deleteMission(item.id);
                                             }}>Supprimer</button>
                                         </div>
