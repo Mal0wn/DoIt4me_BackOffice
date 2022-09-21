@@ -12,7 +12,6 @@ export const Settings = () => {
 
     return(
         <div className="containSettingsPage page">
-            <NavBar />
             <section className="settings">
                 <form>
                     <input placeholder='Nom' onChange={setName}/>

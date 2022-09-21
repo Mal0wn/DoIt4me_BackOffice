@@ -49,7 +49,6 @@ useEffect(() => {
 
 return (
   <div className="usersContainer page">
-    <NavBar/>
     <div className="column">
     <Header/>
       <table className="containList">

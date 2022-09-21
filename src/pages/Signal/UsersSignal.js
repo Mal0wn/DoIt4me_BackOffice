@@ -4,7 +4,7 @@ import NavBar from "../../components/NavBar/NavBar";
 export const UsersSignal = () => {
     return (
         <div className="containUserSignal page">
-            <NavBar/>
+
         </div>
     )
 }
