@@ -22,8 +22,8 @@ nav {
     align-items: center;
 }
 .imgUser {
-    width: 150px;
-    height: 150px;
+    width: 20vh;
+    height: 20vh;
     border-radius: 60%;
     object-fit: cover;
 }
@@ -31,6 +31,7 @@ nav {
     font-size: 1.5em;
     color: #efeaea;
     font-weight: bold;
+    margin-bottom: -10%;
 }
 .listNav {
     height: 75%;
@@ -43,7 +44,6 @@ nav {
     }
 
 .listLink {
-    min-height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

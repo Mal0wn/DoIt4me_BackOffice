@@ -43,6 +43,7 @@ export const Connexion = () => {
       })
       .then((res) => {
         localStorage.setItem("currentUser", JSON.stringify(res.data))
+        console.log(res.data)
         navigate("/users");
       })
       .catch((err) => console.log(err));

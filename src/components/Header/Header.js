@@ -3,18 +3,15 @@ import { FaArchive } from "react-icons/fa";
 import { FiLogOut, FiUser, FiStopCircle } from "react-icons/fi";
 import { RiAdvertisementLine } from "react-icons/ri";
 import { BiCog } from "react-icons/bi";
-
-
-
-import style from './Header.module.css'
+import elon from "../../assets/elon.jpeg";
+import "./Header.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
   const navigate = useNavigate();
-  const [user, setUser] = useState()
-
-  const onDeconnect = () => {
+  const [user, setUser] = useState({"firstname": "", "lastname": ""})
+const onDeconnect = () => {
     localStorage.removeItem('accessToken')
     navigate("/");
   };
@@ -25,39 +22,40 @@ export const Header = () => {
   }, []);
 
   return (
-      <div id="header" className={style.header}>
+      <div id="header">
         <nav>
-          <div className={style.logoText}>
-            <p>Administrateur</p>
+          <div className="logoText">
+            <img className="imgUser" src={elon} alt="userPic" />
+            <p>{user.lastname} {user.firstname}</p>
           </div>
-          <ul className={style.listNav}>
+          <ul>
             <Link to="/users">
-              <li className={style.navLeftItem} active="true">
+              <li className="navLeftItem" active="true">
                 <FiUser /> <p>Utilisateurs</p>
               </li>
             </Link>
             <Link to="/missions">
-              <li className={style.navLeftItem}>
+              <li className="navLeftItem">
                 <FaArchive /> <p>Annonces</p>
               </li>
             </Link>
             <Link to="/usersSignal">
-              <li className={style.navLeftItem}>
+              <li className="navLeftItem">
                 <RiAdvertisementLine /> <p>Signalement utilisateurs</p>
               </li>
             </Link>
             <Link to="/missionsSignal">
-              <li className={style.navLeftItem}>
+              <li className="navLeftItem">
                 <FiStopCircle /> <p>Signalements annonces</p>
               </li>
             </Link>
             <Link to="/settings">
-              <li className={style.navLeftItem}>
+              <li className="navLeftItem">
                 <BiCog /> <p>Settings</p>
               </li>
             </Link>
           </ul>
-          <button onClick={onDeconnect} className={style.deconnexion}>
+          <button onClick={onDeconnect} className="deconnexion">
             <FiLogOut /> 
             <p>Deconnexion</p>
           </button>
