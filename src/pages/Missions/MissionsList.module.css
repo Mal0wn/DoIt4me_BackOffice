@@ -1,0 +1,80 @@
+.containMissionList {
+	display : flex;
+}
+.listMissions {
+	width: 100%;
+	margin: auto;
+}
+
+.itemMission {
+	display:flex;
+	font-size: 12px;
+	background-color: #5C9EAD;
+	margin: 0.5em;
+	padding: 0.7em;
+	border-radius: 6px;
+	min-height: 150px;
+	color: #222823;
+	width:100%;
+	justify-content: start;
+}
+
+/* Contenu Mission */ 
+.containerOneMiss {
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.containTitleDesc {
+	display:flex;
+	flex-direction: column;
+	margin-right: 0.5em;
+	padding: 0.5em;
+	width: 100%;
+
+}
+.containTitleDescTop {
+	display:flex;
+	justify-content: space-between;
+	font-weight: bold;
+}
+.itemTitPrice {
+	color: white;
+
+}
+.itemTit {
+	color: #7D1D3F;
+}
+
+.missInfUs{
+	display:flex;
+	flex-direction:column;
+	border-left: 2px solid #7D1D3F ;
+	padding-left: 0.5em;
+	margin-left: 0.5em;
+	min-width: 150px;
+	max-width: 150px;
+	justify-content: space-between;
+}
+
+/*img*/
+.containImgMissList{
+	max-width: 200px;
+    width: 100%;
+}
+
+.imgMissList {
+	width: 100%;
+    height: fit-content;
+}
+
+.itemBtnSupp {
+	background-color: #7D1D3F;
+    border-radius: 6px;
+    padding: 0.5em;
+    font-size: 1em;
+    color: white;
+	border: none;
+	width: 100%;
+}
