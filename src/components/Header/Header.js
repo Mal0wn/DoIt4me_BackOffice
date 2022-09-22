@@ -4,7 +4,7 @@ import { FiLogOut, FiUser, FiStopCircle } from "react-icons/fi";
 import { RiAdvertisementLine } from "react-icons/ri";
 import { BiCog } from "react-icons/bi";
 import elon from "../../assets/elon.jpeg";
-import "./Header.css";
+import "./Header.module.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
