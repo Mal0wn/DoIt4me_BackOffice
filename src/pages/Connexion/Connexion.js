@@ -1,21 +1,17 @@
 import React, { useState } from "react";
 import style from "./Connexion.module.css";
 import Logo from "../../assets/logo.png";
-import axios from "axios";
 import { Link } from "react-router-dom";
 import UIInput from "../../components/UI/UIInput/UIInput";
-import { API_BASE_URL } from "../../lib/globalVar";
-import { useNavigate } from "react-router-dom";
 import SecurityService from "../../utils/services/SecurityService";
 
 export const Connexion = () => {
 
-  //Get input values
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   // Security service instanciation
-  let onConnect = new SecurityService();
+  let securityService = new SecurityService();
 
   return (
     <div className={style.formContainer}>
@@ -37,7 +33,7 @@ export const Connexion = () => {
             setPassword(event.target.value);
           }}
         />
-        <button className={style.button} onClick={() => onConnect.onConnect({ email, password })}>
+        <button className={style.button} onClick={() => securityService.onConnect({ email, password })}>
           Connexion
         </button>
         <div className={style.formButtons}>
