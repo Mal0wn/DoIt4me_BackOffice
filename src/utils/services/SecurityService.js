@@ -1,12 +1,12 @@
 import React from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import UserService from "./UserService";
+import { API_BASE_URL } from "../../lib/globalVar";
 
 export default class SecurityService extends React.Component {
     
-    navigate = useNavigate();
-    domaine = `https://localhost:7102/api/`;
-
+    userService = new UserService();
+    
     /**
      * Post method to create token and connect user 
      * @param {email} email
@@ -15,11 +15,11 @@ export default class SecurityService extends React.Component {
     async onConnect ({email, password}) {
         let params = { email: email, password: password };
         await axios
-        .post(this.domaine + "Security/Login", params)
+        .post(API_BASE_URL + "Security/Login", params)
         .then((response) => {
             if (response.data.role === "Admin") {
             localStorage.setItem("accessToken", response.data.token);
-            this.getCurrentUser();
+            this.userService.getCurrentUser();
             } else {
             alert("Seul un administrateur peut se connecter au Back Office.");
             }
@@ -32,25 +32,4 @@ export default class SecurityService extends React.Component {
             }
         });
     };
-
-  
-    /**
-     * Get CurrentUser infos
-     */
-    async getCurrentUser () {
-        let token = localStorage.getItem("accessToken");
-        await axios
-        .get(this.domaine + "User/GetCurrentUser", {
-            headers: {
-                Authorization: "Bearer " + token ,
-                },
-            })
-            .then((res) => {
-                localStorage.setItem("currentUser", JSON.stringify(res.data))
-                console.log(res.data)
-                this.navigate("/users");
-            })
-        .catch((err) => console.log(err));
-    };
-
-};
+}
