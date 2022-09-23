@@ -25,6 +25,10 @@ export default class MissionService extends React.Component {
         });
     }
 
+    /**
+     * Delete a mission by id
+     * @param {*} id 
+     */
     deleteMission(id) {
         axios.delete(API_BASE_URL + `Mission/DeleteMission?missionId=${id}`, {
             headers: {
