@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import axios from 'axios'
 import style from './MissionsList.module.css';
 import Header from '../../components/Header/Header';
 import dayjs from 'dayjs';
