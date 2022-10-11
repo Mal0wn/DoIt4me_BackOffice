@@ -4,13 +4,13 @@ import {
     Routes,
     Route,
 } from 'react-router-dom';
-import UsersList from "./pages/Users/UsersList";
+import { UsersList } from "./pages/Users/UsersList";
 import { Connexion } from './pages/Connexion/Connexion';
-import {MissionsList} from "./pages/Missions/MissionsList";
-import {UsersSignal} from "./pages/Signal/UsersSignal";
-import {MissionsSignal} from "./pages/Signal/MissionsSignal";
-import {Settings} from "./pages/Settings/Settings";
-import {UserDetails} from "./pages/UserDetail/UserDetails";
+import { MissionsList } from "./pages/Missions/MissionsList";
+import { UsersSignal } from "./pages/Signal/UsersSignal";
+import { MissionsSignal } from "./pages/Signal/MissionsSignal";
+import { Settings } from "./pages/Settings/Settings";
+import { UserDetails } from "./pages/UserDetail/UserDetails";
 
 function App() {
   return (
