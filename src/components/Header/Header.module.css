@@ -1,8 +1,7 @@
 
 .header {
-    
     height: 100%;
-    width: 25%;
+    width: 30%;
   background:#5c9ead;
 border-bottom-right-radius: 6px;
 
@@ -81,5 +80,14 @@ a {
     align-items: center;
     justify-content: center;
     background-color: transparent;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
 }
 
