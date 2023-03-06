@@ -25,18 +25,17 @@ export default class UserService extends React.Component {
   /**
    * Get CurrentUser infos
    */
-    async getCurrentUser () {
+    async getCurrentUser(setCurrentUser) {
     await axios
-    .get(API_BASE_URL + "User/GetCurrentUser", {
+    .get(API_BASE_URL + "/user/currentUser/me", {
         headers: {
             Authorization: "Bearer " + this.token
             },
         })
         .then((res) => {
             localStorage.setItem("currentUser", JSON.stringify(res.data))
-            console.log(res.data)
-            this.navigate("/users");
-        })
+            setCurrentUser(res.data)
+          })
     .catch((err) => console.log(err));
   };
 };
