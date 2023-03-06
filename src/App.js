@@ -11,19 +11,21 @@ import { UsersSignal } from "./pages/Signal/UsersSignal";
 import { MissionsSignal } from "./pages/Signal/MissionsSignal";
 import { Settings } from "./pages/Settings/Settings";
 import { UserDetails } from "./pages/UserDetail/UserDetails";
+import { CurrentUserDetails } from './pages/CurrentUser/CurrentUserDetails';
 
 function App() {
   return (
       <div className="appContain">
       <Routes>
-          <Route  exact path='/users' element={<UsersList  />}/>
-          <Route  exact path='/missions' element={< MissionsList />}/>
-          <Route  exact path='/usersSignal' element={< UsersSignal />}/>
-          <Route  exact path='/missionsSignal' element={< MissionsSignal />}/>
-          <Route  exact path='/settings' element={< Settings />}/>
-          <Route  exact path='/userDetail/:userId' element={< UserDetails />}/>
-          <Route  exact path='/login' element={< Connexion />}/>
-          <Route  exact path='/' element={< Connexion />}/>
+            <Route  exact path='/users' element={<UsersList  />}/>
+            <Route  exact path='/missions' element={< MissionsList />}/>
+            <Route  exact path='/usersSignal' element={< UsersSignal />}/>
+            <Route  exact path='/missionsSignal' element={< MissionsSignal />}/>
+            <Route  exact path='/settings' element={< Settings />}/>
+            <Route  exact path='/userDetail/:userId' element={< UserDetails />}/>
+            <Route  exact path='/currentUser' element={< CurrentUserDetails />}/>
+            <Route  exact path='/login' element={< Connexion />}/>
+            <Route  exact path='/' element={< Connexion />}/>
 
       </Routes>
       </div>
