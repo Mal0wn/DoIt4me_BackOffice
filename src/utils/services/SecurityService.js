@@ -15,20 +15,22 @@ export default class SecurityService extends React.Component {
     async onConnect ({email, password}) {
         let params = { email: email, password: password };
         await axios
-        .post(API_BASE_URL + "Security/Login", params)
+        .post(API_BASE_URL + "/login/", params)
         .then((response) => {
-            if (response.data.role === "Admin") {
-            localStorage.setItem("accessToken", response.data.token);
-            this.userService.getCurrentUser();
-            } else {
-            alert("Seul un administrateur peut se connecter au Back Office.");
-            }
+            console.log(response.data);
+            // if (response.data.role === "admin") {
+                localStorage.setItem("accessToken", response.data.token);
+                this.userService.getCurrentUser();
+                
+            // } else {
+            //     alert("Seul un administrateur peut se connecter au Back Office." + JSON.stringify(response.data));
+            // }
         })
         .catch((error) => {
             if (error.response.status === 400) {
-            alert("Mauvais identifiants");
+                alert("Mauvais identifiants");
             } else {
-            console.log("There was an error!", error);
+                console.log("There was an error!", error);
             }
         });
     };
