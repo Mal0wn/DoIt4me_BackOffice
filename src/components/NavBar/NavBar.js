@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import './NavBar.css';
 import {SearchBar} from "../SearchBar/SearchBar";
 import {useLocation} from "react-router-dom";
+import style from "./NavBar.module.css";
 
 const NavBar = () => {
     const [title, setTitle] = useState('')
@@ -31,10 +31,10 @@ const NavBar = () => {
     })
 
     return (
-        <div id="navBar">
-            <nav className="navContain">
+        <div id={style.navBar}>
+            <nav className={style.navContain}>
                 <h2>{title}</h2>
-                <div className ="ContainSearch">
+                <div className ={style.ContainSearch}>
                     <SearchBar/>
                 </div>
             </nav>
