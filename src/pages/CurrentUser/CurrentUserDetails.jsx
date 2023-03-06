@@ -76,7 +76,26 @@ export const CurrentUserDetails = () => {
                             </label>
                         </div>
                     </label>
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value="Mettre à jour" />
+                </form>
+            </div>
+        </div>
+        <div className={style.userInfosDetail}>
+            <div className={style.identityUser}>
+                <form>
+                    <label>
+                        <h3>Ancien mot de passe:</h3>
+                        <input type="password" name="oldPassword" placeholder="Ancien mot de passe"/>
+                    </label>
+                    <label>
+                        <h3>Nouveau mot de passe:</h3>
+                        <input type="password" name="newPassword" placeholder="Nouveau mot de passe"/>
+                    </label>
+                    <label>
+                        <h3>Confirmer le nouveau mot de passe:</h3>
+                        <input type="password" name="confirmNewPassword" placeholder="Confirmer le nouveau mot de passe"/>
+                    </label>
+                    <input type="submit" value="Mettre à jour" />
                 </form>
             </div>
         </div>
