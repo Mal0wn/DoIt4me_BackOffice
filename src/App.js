@@ -21,9 +21,8 @@ function App() {
             <Route  exact path='/missions' element={< MissionsList />}/>
             <Route  exact path='/usersSignal' element={< UsersSignal />}/>
             <Route  exact path='/missionsSignal' element={< MissionsSignal />}/>
-            <Route  exact path='/settings' element={< Settings />}/>
+            <Route  exact path='/settings' element={< CurrentUserDetails />}/>
             <Route  exact path='/userDetail/:userId' element={< UserDetails />}/>
-            <Route  exact path='/currentUser' element={< CurrentUserDetails />}/>
             <Route  exact path='/login' element={< Connexion />}/>
             <Route  exact path='/' element={< Connexion />}/>
 
