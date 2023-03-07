@@ -1,16 +1,22 @@
 .userInfosDetail {
     display: flex;
     background-color: #A2D2FF;
-    width: 60%;
+    width: 40%;
     margin: 20px 20px;
     border-radius: 9px;
 }
 
 .identityUser {
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.identityUser input {
+.identityUser .delete p {
+    margin: auto 20px;
+}
+
+.identityUser input, .identityUser button {
     width: 90%;
     padding: 12px 20px;
     margin: 30px auto;
@@ -22,7 +28,7 @@
     box-sizing: border-box;
 }
 
-.identityUser input[type=submit] {
+.identityUser input[type=submit], .identityUser button {
     width: 90%;
     background-color: #7D1D3F;
     color: white;
@@ -33,7 +39,7 @@
     cursor: pointer;
 }
 
-.identityUser input[type=submit]:hover {
+.identityUser input[type=submit]:hover, .identityUser button:hover {
     background-color: #611731;
 }
 
