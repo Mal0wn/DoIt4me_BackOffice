@@ -27,7 +27,7 @@ export default class UserService extends React.Component {
   */
   async getCurrentUser(setCurrentUser) {
     await axios
-    .get(API_BASE_URL + "/user/currentUser/me", {
+    .get(API_BASE_URL + "/user/currentUser/getCurrentUser", {
       headers: {
         Authorization: "Bearer " + this.token
       },
@@ -45,21 +45,20 @@ export default class UserService extends React.Component {
   */
   async updateCurrentUser(user) {
     await axios
-    .put(API_BASE_URL + "/user/currentUser/me", user, {
+    .put(API_BASE_URL + "/user/currentUser/updateCurrentUser", user, {
       headers: {
         Authorization: "Bearer " + this.token,
         'Content-Type': 'application/json'
       },
     })
     .then((res) => {
-      console.log(res.status);
-      return res.status
+      return res;
     })
     .catch((err) => console.log(err));
   };
 
   /**
-   * 
+   * Update CurrentUser password
    * @param {*} user 
    */
   async updatePassword(user) {
@@ -71,7 +70,9 @@ export default class UserService extends React.Component {
       },
     })
     .then((res) => {
-      console.log(res.data)
+      console.log(res.data);
+      localStorage.removeItem('accessToken');
+      this.navigate("/login");
     })
     .catch((err) => {
       console.log(err)
@@ -79,9 +80,13 @@ export default class UserService extends React.Component {
     });
   };
 
-  async deleteUser(phrase) {
+  /**
+   * Delete CurrentUser
+   * @param {*} phrase 
+   */
+  async deleteCurrentUser(phrase) {
     await axios
-    .delete(API_BASE_URL + "/user/currentUser/me", {
+    .delete(API_BASE_URL + "/user/currentUser/deleteCurrentUser", {
       headers: {
         Authorization: "Bearer " + this.token,
         'Content-Type': 'application/json'
@@ -91,7 +96,6 @@ export default class UserService extends React.Component {
       }
     })
     .then((res) => {
-      console.log(res.status);
       return res.status
     })
     .catch((err) => console.log(err));
