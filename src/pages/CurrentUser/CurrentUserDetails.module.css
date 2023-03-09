@@ -1,52 +1,21 @@
-.userInfosDetail {
+.CurrentUserContaint {
     display: flex;
     background-color: #A2D2FF;
-    width: 40%;
+    width: calc(100% / 3 - 20px);
     margin: 20px 20px;
     border-radius: 9px;
 }
 
-.identityUser {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
+@media screen and (max-width: 1160px) {
+    .CurrentUserContaint {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+    }
 
-.identityUser .delete p {
-    margin: auto 20px;
-}
-
-.identityUser input, .identityUser button {
-    width: 90%;
-    padding: 12px 20px;
-    margin: 30px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.identityUser input[type=submit], .identityUser button {
-    width: 90%;
-    background-color: #7D1D3F;
-    color: white;
-    padding: 20px 20px;
-    margin: 40px 20px;
-    border: none;
-    border-radius: 9px;
-    cursor: pointer;
-}
-
-.identityUser input[type=submit]:hover, .identityUser button:hover {
-    background-color: #611731;
-}
-
-.identityUser h3 {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .CurrentUserContainer {
+        flex-direction: column;
+    }
 }
