@@ -7,18 +7,21 @@ import elon from "../../assets/elon.jpeg";
 import style from "./Header.module.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import UserService from "../../utils/services/UserService";
 
 export const Header = () => {
+  const userService = new UserService();
+
   const navigate = useNavigate();
-  const [user, setUser] = useState({"firstname": "", "lastname": ""})
-const onDeconnect = () => {
+  const [currentUser, setCurrentUser] = useState([])
+
+  const onDeconnect = () => {
     localStorage.removeItem('accessToken')
     navigate("/");
   };
 
   useEffect(() => {
-    let user = JSON.parse(localStorage.getItem('currentUser'))
-    setUser(user)
+    userService.getCurrentUser(setCurrentUser)
   }, []);
 
   return (
@@ -26,7 +29,7 @@ const onDeconnect = () => {
         <nav>
           <div className={style.logoText}>
             <img className={style.imgUser} src={elon} alt="userPic" />
-            <p>{user.lastname} {user.firstname}</p>
+            <p>{currentUser.lastname} {currentUser.firstname}</p>
           </div>
           <ul>
             <Link to="/users">
