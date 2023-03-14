@@ -18,30 +18,32 @@ export const UsersList = () => {
   }, [])
 
   return (
-    <div className={style.usersContainer}>
+    <>
       <Header />
-      <div className={style.column}>
-        <section className={style.containList}>
-          <div>
-            {Array.isArray(users) ? users.map(user => {
-              return (
-                <>
-                  <div key={user.id}>
-                    <div> <img alt="profil" className={style.imgUserList} src={user.picture ?? "https://cdn-icons-png.flaticon.com/512/149/149071.png"} /></div>
-                    <p>{user.firstname}</p>
-                    <p>{user.lastname}</p>
-                    <p>{user.email}</p>
-                    <p>{user.phoneNumber}</p>
-                    <div><Rating star={user.rate ?? 1} /></div>
-                    <Link to={`/userDetail/${user.id}`}> details </Link>
-                  </div>
-                </>
-              );
-            })
-              : null}
-          </div>
-        </section>
+      <div className={style.usersContainer}>
+        <div className={style.column}>
+          <section className={style.containList}>
+            <div>
+              {Array.isArray(users) ? users.map(user => {
+                return (
+                  <>
+                    <div key={user.id}>
+                      <div> <img alt="profil" className={style.imgUserList} src={user.picture ?? "https://cdn-icons-png.flaticon.com/512/149/149071.png"} /></div>
+                      <p>{user.firstname}</p>
+                      <p>{user.lastname}</p>
+                      <p>{user.email}</p>
+                      <p>{user.phoneNumber}</p>
+                      <div><Rating star={user.rate ?? 1} /></div>
+                      <Link to={`/userDetail/${user.id}`}> details </Link>
+                    </div>
+                  </>
+                );
+              })
+                : null}
+            </div>
+          </section>
+        </div>
       </div>
-    </div>
+    </>
   )
 }

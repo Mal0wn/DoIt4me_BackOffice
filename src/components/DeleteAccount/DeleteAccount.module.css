@@ -1,0 +1,51 @@
+.userInfosDetail {
+    display: flex;
+    background-color: #A2D2FF;
+    width: calc(100% / 3 - 20px);
+    margin: 20px 20px;
+    border-radius: 9px;
+}
+
+.identityUser {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.identityUser p {
+    margin: 20px 20px;
+    font-size: 1.2em;
+}
+
+label {
+    margin: 20px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.identityUser input, .identityUser button {
+    width: 90%;
+    padding: 12px 30px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.identityUser button {
+    width: 90%;
+    background-color: #7D1D3F;
+    color: white;
+    padding: 20px 20px;
+    margin: 40px 20px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.identityUser button:hover {
+    background-color: #611731;
+}
