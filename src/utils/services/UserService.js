@@ -44,6 +44,8 @@ export default class UserService extends React.Component {
    * @param {*} user 
   */
   async updateCurrentUser(user) {
+    let response;
+
     await axios
     .put(API_BASE_URL + "/user/currentUser/updateCurrentUser", user, {
       headers: {
@@ -52,9 +54,11 @@ export default class UserService extends React.Component {
       },
     })
     .then((res) => {
-      return res;
+      response = res;
     })
     .catch((err) => console.log(err));
+
+    return response;
   };
 
   /**
@@ -70,13 +74,11 @@ export default class UserService extends React.Component {
       },
     })
     .then((res) => {
-      console.log(res.data);
       localStorage.removeItem('accessToken');
       this.navigate("/login");
     })
     .catch((err) => {
       console.log(err)
-      console.log(JSON.stringify(user));
     });
   };
 
