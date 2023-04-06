@@ -5,7 +5,7 @@ import Header from "../../components/Header/Header";
 import UserService from '../../utils/services/UserService.js'
 import { UserDataForm } from "../../components/UserDataForm/UserDataForm.jsx";
 import { UserPasswordForm } from "../../components/UserPasswordForm/UserPasswordForm.jsx";
-import { DeleteAccount } from "../../components/DeleteAccount/DeleteAccount.jsx";
+import { DeleteAccountForm } from "../../components/DeleteAccountForm/DeleteAccountForm.jsx";
 
 export const CurrentUserDetails = () => {
 
@@ -15,23 +15,28 @@ export const CurrentUserDetails = () => {
     const [currentUser, setCurrentUser] = useState([])
 
     useEffect(() => {
-        userService.getCurrentUser(setCurrentUser)
+        userService.getCurrentUser(setCurrentUser);
     }, [])
 
-  return (
-    <>
-        <Header />
-        <div className={style.CurrentUserContainer}>
-            <div className={style.CurrentUserContaint}>
-                <UserDataForm data={currentUser} />
+    return (
+        <>
+            <Header />
+            <div className={style.main}>
+                <div className={style.title}>
+                    <h1>Settings</h1>
+                </div>
+                <div className={style.CurrentUserContainer}>
+                    <div className={style.CurrentUserContaint}>
+                        <UserDataForm data={currentUser} />
+                    </div>
+                    <div className={style.CurrentUserContaint}>
+                        <UserPasswordForm data={currentUser} />
+                    </div>
+                    <div className={style.CurrentUserContaint}>
+                        <DeleteAccountForm data={currentUser} />
+                    </div>
+                </div>
             </div>
-            <div className={style.CurrentUserContaint}>
-                <UserPasswordForm data={currentUser} />
-            </div>
-            <div className={style.CurrentUserContaint}>
-                <DeleteAccount data={currentUser} />
-            </div>
-        </div>
-    </>
-  )
+        </>
+    )
 }

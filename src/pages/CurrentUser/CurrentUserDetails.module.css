@@ -1,9 +1,25 @@
+.main {
+    display: block;
+    width: 100%;
+}
+.title {
+    background-color: var(--purple);
+    width: 100%;
+    }
+.title h1 {
+    color: white;
+    text-align: center;
+    margin: 40px 0 40px 20%;
+    font-size: 50px;
+}
 .CurrentUserContaint {
+    width: 100%;
     display: flex;
-    background-color: #A2D2FF;
+    background-color: var(--blue);
     width: calc(100% / 3 - 20px);
     margin: 20px 20px;
     border-radius: 9px;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 1160px) {
