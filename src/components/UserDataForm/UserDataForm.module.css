@@ -2,8 +2,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
 label {
@@ -15,7 +14,7 @@ label {
 .identityUser input, .identityUser button {
     width: 90%;
     padding: 12px 30px;
-    margin: 30px auto;
+    margin: 0px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,17 +23,19 @@ label {
     box-sizing: border-box;
 }
 
-.identityUser input[type=submit] {
+.identityUser input[type=submit], .identityUser button {
     width: 90%;
-    background-color: #7D1D3F;
+    background-color: var(--purple);
     color: white;
     padding: 20px 20px;
-    margin: 40px 20px;
+    margin: 10px 20px;
     border: none;
     border-radius: 9px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
-.identityUser input[type=submit]:hover {
-    background-color: #611731;
+.identityUser input[type=submit]:hover, .identityUser button:hover {
+    background-color: var(--purple);
 }
