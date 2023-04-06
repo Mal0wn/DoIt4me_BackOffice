@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import style from "./DeleteAccount.module.css";
+import style from "./DeleteAccountForm.module.css";
 import UserService from '../../utils/services/UserService.js'
 import { useNavigate } from "react-router-dom";
 
-export const DeleteAccount = ( currentUser ) => {
+export const DeleteAccountForm = ( currentUser ) => {
 
     currentUser = currentUser.data;
     // User service instanciation
@@ -43,7 +43,7 @@ export const DeleteAccount = ( currentUser ) => {
             {showConfirmation ? (
                 <div className={style.identityUser}>
                     <div className={style.delete}>
-                        <p>Veuillez saisir <strong>'DELETE MY ACCOUNT'</strong> pour supprimer votre compte</p>
+                        <p>Veuillez saisir <strong>'DELETE MY ACCOUNT'</strong> et confirmer pour supprimer votre compte</p>
                     </div>
                     <div className={style.delete}>
                         <input type="text"  placeholder="DELETE MY ACCOUNT" onChange={inputValue}/>
