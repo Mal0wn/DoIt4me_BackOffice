@@ -1,13 +1,14 @@
 
 import React , { useState, useEffect } from  "react";
-import style from './CurrentUserDetails.module.css';
+import style from './Settings.module.css';
 import Header from "../../components/Header/Header";
 import UserService from '../../utils/services/UserService.js'
 import { UserDataForm } from "../../components/UserDataForm/UserDataForm.jsx";
 import { UserPasswordForm } from "../../components/UserPasswordForm/UserPasswordForm.jsx";
 import { DeleteAccountForm } from "../../components/DeleteAccountForm/DeleteAccountForm.jsx";
+import { Title } from "../../components/UI/Title/Title"
 
-export const CurrentUserDetails = () => {
+export const Settings = () => {
 
     // User service instanciation
     const userService = new UserService();
@@ -22,9 +23,7 @@ export const CurrentUserDetails = () => {
         <>
             <Header />
             <div className={style.main}>
-                <div className={style.title}>
-                    <h1>Settings</h1>
-                </div>
+                <Title title="Settings" />
                 <div className={style.CurrentUserContainer}>
                     <div className={style.CurrentUserContaint}>
                         <UserDataForm data={currentUser} />
