@@ -1,20 +1,31 @@
 .identityUser {
-    margin: auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-label {
+.identityUser label {
     margin: 20px 20px;
     font-size: 1.2em;
     font-weight: bold;
 }
 
+.identityUser label h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.identityUser div {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 .identityUser input, .identityUser button {
     width: 90%;
-    padding: 12px 30px;
-    margin: 0px auto;
+    padding: 9px 30px;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,8 +38,8 @@ label {
     width: 90%;
     background-color: var(--purple);
     color: white;
-    padding: 20px 20px;
-    margin: 10px 20px;
+    padding: 15px;
+    margin: 10px auto;
     border: none;
     border-radius: 9px;
     cursor: pointer;
