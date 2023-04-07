@@ -1,0 +1,50 @@
+.errorMessage {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    background-color: #f8d7da;
+    color: #721c24;
+    margin: 10px;
+  }
+  
+  .errorMessage p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .errorMessage svg {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: 0.8rem;
+    fill: none;
+    stroke: #721c24;
+    stroke-width: 2;
+  }
+  
+  .errorMessage .checkmarkCircle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+    transform-origin: center;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+  }
+  
+  .errorMessage .checkmarkCheck {
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.6s forwards;
+  }
+  
+  @keyframes stroke {
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
