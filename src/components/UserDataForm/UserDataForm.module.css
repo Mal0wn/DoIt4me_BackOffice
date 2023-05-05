@@ -6,14 +6,16 @@
 }
 
 .identityUser label {
-    margin: 20px 20px;
-    font-size: 1.2em;
-    font-weight: bold;
+    margin: 10px 20px;
 }
 
 .identityUser label h3 {
     margin: 0;
     padding: 0;
+}
+
+.identityUser label p {
+    font-size: 1.2em;
 }
 
 .identityUser div {
