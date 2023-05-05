@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  /* color var */
+  --purple: #7D1D3F;
+  --blue: #A2D2FF;
 }
 
 code {

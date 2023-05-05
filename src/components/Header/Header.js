@@ -16,7 +16,8 @@ export const Header = () => {
   const [currentUser, setCurrentUser] = useState([])
 
   const onDeconnect = () => {
-    localStorage.removeItem('accessToken')
+    localStorage.removeItem('accessToken');
+    localStorage.removeItem('currentUser');
     navigate("/");
   };
 

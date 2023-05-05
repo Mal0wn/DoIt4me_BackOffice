@@ -11,7 +11,6 @@ import { UsersSignal } from "./pages/Signal/UsersSignal";
 import { MissionsSignal } from "./pages/Signal/MissionsSignal";
 import { Settings } from "./pages/Settings/Settings";
 import { UserDetails } from "./pages/UserDetail/UserDetails";
-import { CurrentUserDetails } from './pages/CurrentUser/CurrentUserDetails';
 
 function App() {
   return (
@@ -21,7 +20,7 @@ function App() {
             <Route  exact path='/missions' element={< MissionsList />}/>
             <Route  exact path='/usersSignal' element={< UsersSignal />}/>
             <Route  exact path='/missionsSignal' element={< MissionsSignal />}/>
-            <Route  exact path='/settings' element={< CurrentUserDetails />}/>
+            <Route  exact path='/settings' element={< Settings />}/>
             <Route  exact path='/userDetail/:userId' element={< UserDetails />}/>
             <Route  exact path='/login' element={< Connexion />}/>
             <Route  exact path='/' element={< Connexion />}/>

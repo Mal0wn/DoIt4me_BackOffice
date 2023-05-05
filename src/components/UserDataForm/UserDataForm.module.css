@@ -1,21 +1,33 @@
 .identityUser {
-    margin: auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
-label {
-    margin: 20px 20px;
+.identityUser label {
+    margin: 10px 20px;
+}
+
+.identityUser label h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.identityUser label p {
     font-size: 1.2em;
-    font-weight: bold;
+}
+
+.identityUser div {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .identityUser input, .identityUser button {
     width: 90%;
-    padding: 12px 30px;
-    margin: 30px auto;
+    padding: 9px 30px;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,17 +36,19 @@ label {
     box-sizing: border-box;
 }
 
-.identityUser input[type=submit] {
+.identityUser input[type=submit], .identityUser button {
     width: 90%;
-    background-color: #7D1D3F;
+    background-color: var(--purple);
     color: white;
-    padding: 20px 20px;
-    margin: 40px 20px;
+    padding: 15px;
+    margin: 10px auto;
     border: none;
     border-radius: 9px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
-.identityUser input[type=submit]:hover {
-    background-color: #611731;
+.identityUser input[type=submit]:hover, .identityUser button:hover {
+    background-color: var(--purple);
 }

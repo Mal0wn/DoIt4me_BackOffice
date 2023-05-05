@@ -1,0 +1,32 @@
+.successMessage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 9px;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .checkmark {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .checkmarkCircle {
+    stroke: #28a745;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+  }
+  
+  .checkmarkCheck {
+    stroke: #28a745;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+  }
+  
