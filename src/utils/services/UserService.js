@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import { API_BASE_URL } from '../../lib/globalVar';
 
-export default class UserService extends React.Component {
+export default class UserService {
   
   token = localStorage.getItem("accessToken");
   navigate = useNavigate();
