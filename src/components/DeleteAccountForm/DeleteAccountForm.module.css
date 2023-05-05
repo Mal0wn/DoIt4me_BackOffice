@@ -1,6 +1,6 @@
 .userInfosDetail {
     display: flex;
-    background-color: #A2D2FF;
+    background-color: var(--blue);
     width: calc(100% / 3 - 20px);
     margin: 20px 20px;
     border-radius: 9px;
@@ -19,8 +19,6 @@
 
 label {
     margin: 20px 20px;
-    font-size: 1.2em;
-    font-weight: bold;
 }
 
 .identityUser input, .identityUser button {
@@ -37,7 +35,7 @@ label {
 
 .identityUser button {
     width: 90%;
-    background-color: #7D1D3F;
+    background-color: var(--purple);
     color: white;
     padding: 20px 20px;
     margin: 40px 20px;
@@ -47,5 +45,5 @@ label {
 }
 
 .identityUser button:hover {
-    background-color: #611731;
+    background-color: var(--purple);
 }
