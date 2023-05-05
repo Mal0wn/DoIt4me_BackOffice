@@ -22,11 +22,7 @@ export const DeleteAccountForm = ( currentUser ) => {
         e.preventDefault();
 
         if (phrase === "DELETE MY ACCOUNT") {
-            let response = userService.deleteUser(phrase);
-            console.log("voir la reponse de deleteUser: ");
-            response.then((response) => {
-                console.log(response);
-            });
+            userService.deleteCurrentUser(phrase);
             localStorage.removeItem('accessToken')
             navigate("/login");
         } else {
