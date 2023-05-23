@@ -1,7 +1,7 @@
 
 #header {
     height: 100%;
-    width: 15%;
+    min-width: 30%;
     left: 0px;
     top: 0px;
     background:#5c9ead;

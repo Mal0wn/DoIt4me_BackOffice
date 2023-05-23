@@ -12,7 +12,7 @@ export default class MissionService extends React.Component {
      */
     getAllMissions(setAllMissions){
         axios
-        .get(API_BASE_URL + 'Mission/GetAllMissions', {
+        .get(API_BASE_URL + '/mission', {
             headers: {
                 Authorization: "Bearer " + this.token ,
             },
@@ -30,7 +30,7 @@ export default class MissionService extends React.Component {
      * @param {*} id 
      */
     deleteMission(id) {
-        axios.delete(API_BASE_URL + `Mission/DeleteMission?missionId=${id}`, {
+        axios.delete(API_BASE_URL + `/mission/${id}`, {
             headers: {
                 Authorization: "Bearer " + this.token
             },

@@ -13,6 +13,7 @@ export const MissionsList = () => {
 
     useEffect(() => {
         missionService.getAllMissions(setAllMissions);
+        
     }, []);
 
     return (
@@ -27,7 +28,7 @@ export const MissionsList = () => {
                                     key={mission.id}>
                                     <div className={style.containerOneMiss}>
                                         <div className={style.containImgMissList}>
-                                            <img className={style.imgMissList} src={mission.picture ?? "https://bitsofco.de/content/images/2018/12/broken-1.png"} />
+                                            <img className={style.imgMissList} src={mission.picture ?? "https://picsum.photos/id/76/4912/3264"} />
                                         </div>
                                         <div className={style.containTitleDesc}>
                                             <div className={style.containTitleDescTop}>
@@ -38,9 +39,9 @@ export const MissionsList = () => {
                                         </div>
                                         <div className={style.missInfUs}>
                                             <p className={style.itemMissDatPub}>Publié le: {dayjs(mission.creationDate).format('DD/MM/YYYY')}</p>
-                                            <p className={style.itemIdUs}>Proposé par {mission.claimant.firstname}</p>
+                                            <p className={style.itemIdUs}>Proposé par {mission.creator.firstname}</p>
                                             {mission.maker != null ? (
-                                                <p className={style.itemIdUs}>Accepté par : {mission.maker.firstname}</p>) : (<p>Accepté par : Pas de Maker </p>)}
+                                                <p className={style.itemIdUs}>Accepté par : {/*mission.maker.firstname*/}</p>) : (<p>Accepté par : Pas de Maker </p>)}
                                             <div className={style.containBtnSupp}>
                                                 <button className={style.itemBtnSupp} onClick={() => {
                                                     missionService.deleteMission(mission.id);
